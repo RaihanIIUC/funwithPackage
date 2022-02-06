@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a2e889a83e1bb237badb0989ef852656",
+    "content-hash": "8c27325749ab2fca04ab07adff00cc6a",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -121,6 +121,73 @@
                 }
             ],
             "time": "2021-08-15T20:50:18+00:00"
+        },
+        {
+            "name": "bugphix/bugphix-laravel",
+            "version": "v1.5.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bugphix/bugphix-laravel.git",
+                "reference": "a8297901648403aeeee2214d67c36006f38ad08e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bugphix/bugphix-laravel/zipball/a8297901648403aeeee2214d67c36006f38ad08e",
+                "reference": "a8297901648403aeeee2214d67c36006f38ad08e",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^6.3|^7.0",
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "laravel/laravel": "~6.0",
+                "orchestra/testbench": "^4.0",
+                "phpunit/phpunit": "~6.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Bugphix\\BugphixLaravel\\BugphixServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Bugphix\\BugphixLaravel\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jeric Izon",
+                    "email": "im.jericizon@gmail.com"
+                }
+            ],
+            "description": "Capture and monitor detailed error logs with nice dashboard and UI.",
+            "keywords": [
+                "bugphix",
+                "bugphix-laravel",
+                "error",
+                "error-catcher",
+                "error-handler",
+                "error-logger",
+                "error-manager",
+                "error-monitoring",
+                "error-viewer",
+                "error-watcher",
+                "laravel-bugphix",
+                "laravel-error"
+            ],
+            "support": {
+                "issues": "https://github.com/bugphix/bugphix-laravel/issues",
+                "source": "https://github.com/bugphix/bugphix-laravel/tree/v1.5.4"
+            },
+            "time": "2020-06-22T00:31:45+00:00"
         },
         {
             "name": "dflydev/dot-access-data",

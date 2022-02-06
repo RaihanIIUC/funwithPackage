@@ -2,7 +2,7 @@
 
 namespace App\Exceptions;
 
-use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+ use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 use Throwable;
 
 class Handler extends ExceptionHandler
@@ -38,4 +38,13 @@ class Handler extends ExceptionHandler
             //
         });
     }
+    public function report(Throwable $exception)
+    {
+        if (app()->bound('bugphix') && $this->shouldReport($exception)) {
+            app('bugphix')->catchError($exception);
+        }
+
+        parent::report($exception);
+    }
+
 }
